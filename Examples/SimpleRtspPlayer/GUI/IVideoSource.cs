@@ -7,4 +7,5 @@ namespace SimpleRtspPlayer.GUI
     {
         event EventHandler<IDecodedVideoFrame> FrameReceived;
     }
+
 }

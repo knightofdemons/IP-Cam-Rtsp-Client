@@ -5,7 +5,7 @@ namespace SimpleRtspPlayer.RawFramesDecoding.FFmpeg
 {
     class FFmpegAudioPInvoke
     {
-        private const string LibraryName = "libffmpeghelper.dll";
+        private const string LibraryName = "\\x86\\libffmpeghelper.dll";
 
         [DllImport(LibraryName, EntryPoint = "create_audio_decoder", CallingConvention = CallingConvention.Cdecl)]
         public static extern int CreateAudioDecoder(FFmpegAudioCodecId audioCodecId, int bitsPerCodedSample, out IntPtr handle);

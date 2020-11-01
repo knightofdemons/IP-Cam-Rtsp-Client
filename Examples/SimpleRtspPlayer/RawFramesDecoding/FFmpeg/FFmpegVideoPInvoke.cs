@@ -29,7 +29,7 @@ namespace SimpleRtspPlayer.RawFramesDecoding.FFmpeg
 
     static class FFmpegVideoPInvoke
     {
-        private const string LibraryName = "libffmpeghelper.dll";
+        private const string LibraryName = "\\x86\\libffmpeghelper.dll";
 
         [DllImport(LibraryName, EntryPoint = "create_video_decoder", CallingConvention = CallingConvention.Cdecl)]
         public static extern int CreateVideoDecoder(FFmpegVideoCodecId videoCodecId, out IntPtr handle);

@@ -242,7 +242,7 @@ namespace RtspClientSharp.Rtsp
                 throw new RtspBadResponseException("Transport header is not found");
 
             string portsAttributeName = _connectionParameters.RtpTransport == RtpTransportProtocol.UDP
-                ? "server_port"
+                ? "client_port"
                 : "interleaved";
 
             string[] transportAttributes = transportHeader.Split(TransportAttributesSeparator, StringSplitOptions.RemoveEmptyEntries);

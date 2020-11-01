@@ -213,14 +213,33 @@
     <Content Include="x64\postproc-55.dll" />
     <Content Include="x64\swresample-3.dll" />
     <Content Include="x64\swscale-5.dll" />
-    <Content Include="x86\avcodec-58.dll" />
-    <Content Include="x86\avdevice-58.dll" />
-    <Content Include="x86\avfilter-7.dll" />
-    <Content Include="x86\avformat-58.dll" />
-    <Content Include="x86\avutil-56.dll" />
-    <Content Include="x86\postproc-55.dll" />
-    <Content Include="x86\swresample-3.dll" />
-    <Content Include="x86\swscale-5.dll" />
+    <Content Include="x86\avcodec-58.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\avdevice-58.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\avfilter-7.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\avformat-58.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\avutil-56.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libffmpeghelper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\postproc-55.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\swresample-3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\swscale-5.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
